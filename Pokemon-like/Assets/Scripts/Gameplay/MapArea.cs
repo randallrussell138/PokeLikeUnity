@@ -8,6 +8,8 @@ public class MapArea : MonoBehaviour
 
     public Pokemon GetRandomWildPokemon()
     {
-        return wildPokemons[Random.Range(0 , wildPokemons.Count)];
+        var wildPokemon = wildPokemons[Random.Range(0 , wildPokemons.Count)];
+        wildPokemon.Init();
+        return wildPokemon;
     }
 }

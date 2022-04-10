@@ -26,7 +26,7 @@ public class Pokemon
 
     public void Init()
     {
-        HP= MaxHp;
+        HP = MaxHp;
 
         //Generate Moves
         Moves = new List<Move>();
